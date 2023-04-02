@@ -1,0 +1,39 @@
+    Random-Scanning Worm Propagation
+
+The first code simulates a random-scanning worm propagation. The code creates a list of vulnerable computers with their
+IP addresses and initializes the simulation parameters such as the number of vulnerable computers, the number of
+non-vulnerable computers, and the initial infected computer.
+
+The simulation is then run for a maximum of 10,000 time ticks (which can be adjusted as needed) or until all vulnerable
+computers are infected. At each time tick, the infected computer scans B number of IPs randomly from the list of all IPs
+in the network. If a vulnerable computer is found, it is marked as infected and added to the list of infected computers.
+However, the newly infected computer will only start scanning and infecting others at the next 20th time tick, as per
+the given requirement.
+
+The simulation continues until all vulnerable computers are infected. After each simulation run, the number of infected
+computers at each time tick is stored in a list. The code runs three independent simulations and saves the results of
+each simulation in a separate file.
+
+In the end, the code reads the saved results from the files, plots the number of infected computers over time for each
+simulation run, and shows the plot.
+
+========================================================================================================================
+
+    Sequential-Scanning Worm Propagation
+
+The second code simulates a sequential-scanning worm propagation. The code creates a list of vulnerable computers with
+their IP addresses and initializes the simulation parameters such as the number of vulnerable computers, the number of
+non-vulnerable computers, and the initial infected computer.
+
+The simulation is then run for a maximum of 10,000 time ticks (which can be adjusted as needed) or until all vulnerable
+computers are infected. At each time tick, the infected computer scans B number of IPs either sequentially or randomly
+based on the given probability. If a vulnerable computer is found, it is marked as infected and added to the list of
+infected computers. However, the newly infected computer will only start scanning and infecting others at the next 20th
+time tick, as per the given requirement.
+
+The simulation continues until all vulnerable computers are infected. After each simulation run, the number of infected
+computers at each time tick is stored in a list. The code runs three independent simulations and saves the results of
+each simulation in a separate file.
+
+In the end, the code reads the saved results from the files, plots the number of infected computers over time for each
+simulation run, and shows the plot.
