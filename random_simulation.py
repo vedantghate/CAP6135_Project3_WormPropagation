@@ -57,12 +57,10 @@ for i in range(NUM_RUNS):
 plt.figure(figsize=(10, 6))
 plt.xlabel('Time')
 plt.ylabel('Number of Infected Computers')
-# plt.xlim(0, max([max(time) for time, infected in simulation_results]))
-# plt.ylim(0, len(VULNERABLE_COMPUTERS))
 plt.title('Worm Propagation Simulation')
 colors = ['red', 'green', 'blue']
 linestyles = ['solid', 'dashed', 'dotted']
 for i, (time, infected) in enumerate(simulation_results):
     plt.plot(time, infected, label=f'Simulation {i+1}', color=colors[i], linestyle=linestyles[i])
 plt.legend()
-plt.show()
+plt.savefig('random.png')

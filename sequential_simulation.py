@@ -71,4 +71,4 @@ for i, sim in enumerate(simulations):
 ax.set_xlabel("Time")
 ax.set_ylabel("Number of Infected Computers")
 ax.legend()
-plt.show()
+plt.savefig('sequential.png')
